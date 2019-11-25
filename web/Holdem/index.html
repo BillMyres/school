@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Hold em</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="src/css/style.css" />
+
+		<script src="src/js/pokersolver.js"></script>
+		<script src="src/js/functions.js"></script>
+		<script type="module" src="src/js/main.js"></script>
+		<script>
+			function setAction(element){
+				document.getElementById('action').innerText = element.innerText.toLowerCase();
+			}
+		</script>
+	</head>
+	<body>
+		<h1 class="text-center pt-3">Hold em</h1>
+		<h5 class="text-center">Author: Thomas vanBommel</h5>
+
+		<div id="game" class="w-100 my-3  bg-dark">
+			<canvas id="canvas" class="w-100 mb-3">Unable to load canvas</canvas>
+
+			<div id="controls" class="pb-2">
+				<div id="action" class="hidden"></div>
+				<div id="fccb-group" class="text-light">
+					<div id="fold-container" class="bg-danger">
+						<button type="button" class="btn btn-block btn-danger" onclick="setAction(this);">Fold</button>
+						<div>
+							<input id="checkbox-fold" type="checkbox" value="bet">
+							<label for="checkbox-fold">auto</label>
+						</div>
+					</div>
+					<div id="check-container" class="bg-warning text-dark">
+						<button type="button" class="btn btn-block btn-warning" onclick="setAction(this);">Check</button>
+						<div>
+							<input id="checkbox-check" type="checkbox" value="bet">
+							<label for="checkbox-check">auto</label>
+						</div>
+					</div>
+					<div id="call-container" class="bg-success">
+						<button type="button" class="btn btn-block btn-success" onclick="setAction(this);">Call</button>
+						<div>
+							<input id="checkbox-call" type="checkbox" value="bet">
+							<label for="checkbox-call">auto</label>
+						</div>
+					</div>
+					<div id="bet-container" class="bg-primary">
+						<button type="button" class="btn btn-block btn-primary" onclick="setAction(this);">Bet</button>
+						<div>
+							<input id="checkbox-bet" type="checkbox" value="bet">
+							<label for="checkbox-bet">auto</label>
+							<input type="number" value="10" style="width:100%;" />
+						</div>
+					</div>
+				</div>
+<!--				<div class="">-->
+<!--					<div id="fcb-group" class="btn-group col-md-6">-->
+<!--						<button id="btn-fold" type="button" class="btn btn-md btn-danger" onclick="setAction(this)">-->
+<!--							Fold-->
+<!--							<div id="auto-fold-container">-->
+<!--								<input id="auto-fold" type="checkbox" value="fold">-->
+<!--								<label for="auto-fold">auto</label>-->
+<!--							</div>-->
+<!--						</button>-->
+<!--						<button id="btn-check" type="button" class="btn btn-md btn-warning" onclick="setAction(this);">-->
+<!--							Check-->
+<!--							<div id="auto-check-container">-->
+<!--								<input id="auto-check" type="checkbox" value="check">-->
+<!--								<label for="auto-check">auto</label>-->
+<!--							</div>-->
+<!--						</button>-->
+<!--						<button id="btn-call" type="button" class="btn btn-md btn-success" onclick="setAction(this)">-->
+<!--							Call-->
+<!--							<div id="auto-call-container">-->
+<!--								<input id="auto-call" type="checkbox" value="call">-->
+<!--								<label for="auto-call">auto</label>-->
+<!--							</div>-->
+<!--						</button>-->
+<!--						<button id="btn-bet" type="button" class="btn btn-md btn-primary" onclick="setAction(this)">-->
+<!--							Bet-->
+<!--							<div id="auto-bet-container">-->
+<!--								<input id="auto-bet" type="checkbox" value="bet">-->
+<!--								<label for="auto-bet">auto</label>-->
+<!--								<input type="number" value="10" style="width:100%; position:relative; top:-0.22em; left:-0.05em; padding-right:0.1em;" />-->
+<!--							</div>-->
+<!--						</button>-->
+<!--					</div>-->
+
+<!--					<div id="action" class="hidden"></div>-->
+<!--				</div>-->
+<!--			</div>-->
+
+		</div>
+
+<!--		<div id="fccb-group" class="text-light">-->
+<!--			<div id="fold-container" class="bg-danger">-->
+<!--				<button type="button" class="btn btn-block btn-danger">Fold</button>-->
+<!--				<div>-->
+<!--					<input id="checkbox-fold" type="checkbox" value="bet">-->
+<!--					<label for="checkbox-fold">auto</label>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div id="check-container" class="bg-warning text-dark">-->
+<!--				<button type="button" class="btn btn-block btn-warning">Check</button>-->
+<!--				<div>-->
+<!--					<input id="checkbox-check" type="checkbox" value="bet">-->
+<!--					<label for="checkbox-check">auto</label>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div id="call-container" class="bg-success">-->
+<!--				<button type="button" class="btn btn-block btn-success">Call</button>-->
+<!--				<div>-->
+<!--					<input id="checkbox-call" type="checkbox" value="bet">-->
+<!--					<label for="checkbox-call">auto</label>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div id="bet-container" class="bg-primary">-->
+<!--				<button type="button" class="btn btn-block btn-primary">Bet</button>-->
+<!--				<div>-->
+<!--					<input id="checkbox-bet" type="checkbox" value="bet">-->
+<!--					<label for="checkbox-bet">auto</label>-->
+<!--					<input type="number" value="10" style="width:100%;" />-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+
+	</body>
+</html>

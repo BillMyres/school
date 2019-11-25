@@ -1,0 +1,99 @@
+#game{
+    min-width:324px;
+    position:relative;
+}
+
+#controls{
+    width:100%;
+    margin-top:0.8em;
+    /*position:absolute;*/
+    /*bottom:0;*/
+    /*left:0;*/
+}
+
+#fcb-group{
+    width:360px;
+    margin-left:calc(50% - 180px);
+    /*position:absolute;*/
+    /*bottom:15px;*/
+    /*right:15px;*/
+}
+
+#fccb-group{
+    width:360px;
+    margin:0 auto;
+    display:flex;
+    position:relative;
+    top:-1.9em;
+}
+
+#fccb-group div{
+    flex:1;
+    text-align:center;
+    /*padding-bottom:0.5em;*/
+}
+
+/*#fold-container{*/
+/*    border-top-left-radius: 0.25rem;*/
+/*    border-bottom-left-radius: 0.25rem;*/
+/*}*/
+
+#fccb-group div:first-child{
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+#fccb-group div:last-child{
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+#fold-container, #check-container, #call-container{
+    height:max-content;
+}
+
+#auto-fold-container, #auto-check-container, #auto-call-container, #auto-bet-container{
+    width:101.5%;
+    height:2em;
+    position:absolute;
+    padding-top:0.25em;
+    left:-1px;
+    top:-2em;
+}
+
+#auto-fold-container{
+    border-top-left-radius: .25rem;
+    background-color:darkred;
+}
+
+#auto-check-container{
+    background-color:darkorange;
+}
+
+#auto-call-container{
+    background-color:darkgreen;
+}
+
+#auto-bet-container{
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+    background-color:darkblue;
+    top:-4em;
+}
+
+.btn{
+    position:relative;
+}
+
+.btn[disabled]{
+    background-color:gray;
+    color:lightgray;
+
+    outline:none;
+    border:none;
+}
+
+.hidden{
+    display:none;
+}

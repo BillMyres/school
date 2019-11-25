@@ -1,0 +1,23 @@
+body{
+    background-color:#666;
+}
+
+#tests{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.test-container{
+    /*width:360px;*/
+    width:max-content;
+    float:left;
+    flex-grow: 1;
+
+    padding:1em;
+    margin:1em 1em;
+
+    color:white;
+    background-color:#333;
+
+    font-family:monospace;
+}
